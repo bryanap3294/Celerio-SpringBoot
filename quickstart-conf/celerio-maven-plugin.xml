@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<celerio xmlns="http://www.jaxio.com/schema/celerio" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.jaxio.com/schema/celerio ./celerio.xsd">
+    <configuration rootPackage="com.bryanaguilar.miaplicacion" applicationName="sampleapp">
+        <!-- Which tables are used for generation -->
+        <tables>
+            <!-- <table include="false" pattern="*_AUDIT"/> -->
+            <table include="false" pattern="jhi_persistent_*"/>
+        </tables>
+        <sequences>
+           <sequence tableNamePattern="*" sequenceName="seq_{TABLE_NAME}" />
+        </sequences>
+        <!-- global number mapping (optional) -->
+        <numberMappings>
+            <numberMapping mappedType="M_BOOLEAN" columnSizeMin="1" columnSizeMax="2" columnDecimalDigitsMin="0"
+                           columnDecimalDigitsMax="0"/>
+        </numberMappings>
+        <dateMappings>
+        </dateMappings>
+        <headerComment>
+            <lines>
+                <line>@Author: Bryan Aguilar</line>
+            </lines>
+        </headerComment>
+    </configuration>
+</celerio>

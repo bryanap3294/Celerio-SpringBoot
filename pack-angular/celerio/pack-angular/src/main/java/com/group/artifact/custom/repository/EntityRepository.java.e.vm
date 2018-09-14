@@ -1,0 +1,12 @@
+$output.java("${Root.packageName}.service.impl","CrudServiceImpl")## ${Root.packageName} es la ruta general
+
+##import com.bryanaguilar.miaplicacion.model.AppParametria;
+##import com.bryanaguilar.miaplicacion.repository.EntityRepository;
+$output.require("${Root.packageName}.model.${entity}")##
+$output.require("${Root.packageName}.repository.${entity}")##
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ${entity}Repository extends EntityRepository<${entity}, Integer> {
+
+}

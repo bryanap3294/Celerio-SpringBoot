@@ -1,0 +1,34 @@
+$output.java($entity.models)## Se configura en el Celerio-pack.xml
+
+import java.io.Serializable;
+
+#foreach ($annotation in $entity.jpa.annotations)
+$annotation
+#end
+public class ${entity} extends BaseEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    // Raw attributes
+    #foreach ($attribute in $entity.nonCpkAttributes.list)
+        #if(!$attribute.isInFk() || $attribute.isSimplePk())
+    private $attribute.type $attribute.var;
+        #end
+    #end
+    #foreach ($attribute in $entity.nonCpkAttributes.list)
+        #if(!$attribute.isInFk() || $attribute.isSimplePk())
+    // -- [${attribute.var}] ------------------------
+            #foreach ($annotation in $attribute.jpa.annotations)
+    $annotation
+            #end
+    public $attribute.type ${attribute.getter}() {
+            return $attribute.var;
+        }
+
+    public void ${attribute.setter}($attribute.type $attribute.var) {
+            this.$attribute.var = $attribute.var;
+        }
+
+        #end
+    #end
+}

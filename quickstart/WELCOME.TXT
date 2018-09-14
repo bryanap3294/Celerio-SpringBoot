@@ -1,0 +1,111 @@
+This is a sample 'per project' template.
+
+Templates doc: http://www.jaxio.com/documentation/celerio/templates.html
+
+Here is a simple script:
+
+    ${entity.model.type}: AppParametria
+    ${entity.model.var}: appParametria
+    ${entity.model.getter}: getAppParametria
+    ${entity.service.type}: AppParametriaService
+    ${entity.service.var}: appParametriaService
+    ${entity.service.getter}: getAppParametriaService
+
+    ${entity.model.type}: CampannaDiasAnticipacion
+    ${entity.model.var}: campannaDiasAnticipacion
+    ${entity.model.getter}: getCampannaDiasAnticipacion
+    ${entity.service.type}: CampannaDiasAnticipacionService
+    ${entity.service.var}: campannaDiasAnticipacionService
+    ${entity.service.getter}: getCampannaDiasAnticipacionService
+
+    ${entity.model.type}: CentroValoracion
+    ${entity.model.var}: centroValoracion
+    ${entity.model.getter}: getCentroValoracion
+    ${entity.service.type}: CentroValoracionService
+    ${entity.service.var}: centroValoracionService
+    ${entity.service.getter}: getCentroValoracionService
+
+    ${entity.model.type}: ConfiguracionPeriodo
+    ${entity.model.var}: configuracionPeriodo
+    ${entity.model.getter}: getConfiguracionPeriodo
+    ${entity.service.type}: ConfiguracionPeriodoService
+    ${entity.service.var}: configuracionPeriodoService
+    ${entity.service.getter}: getConfiguracionPeriodoService
+
+    ${entity.model.type}: DatosProfit
+    ${entity.model.var}: datosProfit
+    ${entity.model.getter}: getDatosProfit
+    ${entity.service.type}: DatosProfitService
+    ${entity.service.var}: datosProfitService
+    ${entity.service.getter}: getDatosProfitService
+
+    ${entity.model.type}: DatosProfitTemp
+    ${entity.model.var}: datosProfitTemp
+    ${entity.model.getter}: getDatosProfitTemp
+    ${entity.service.type}: DatosProfitTempService
+    ${entity.service.var}: datosProfitTempService
+    ${entity.service.getter}: getDatosProfitTempService
+
+    ${entity.model.type}: DummyCentro
+    ${entity.model.var}: dummyCentro
+    ${entity.model.getter}: getDummyCentro
+    ${entity.service.type}: DummyCentroService
+    ${entity.service.var}: dummyCentroService
+    ${entity.service.getter}: getDummyCentroService
+
+    ${entity.model.type}: DummySociedadSap
+    ${entity.model.var}: dummySociedadSap
+    ${entity.model.getter}: getDummySociedadSap
+    ${entity.service.type}: DummySociedadSapService
+    ${entity.service.var}: dummySociedadSapService
+    ${entity.service.getter}: getDummySociedadSapService
+
+    ${entity.model.type}: DummyWsTipoCambio
+    ${entity.model.var}: dummyWsTipoCambio
+    ${entity.model.getter}: getDummyWsTipoCambio
+    ${entity.service.type}: DummyWsTipoCambioService
+    ${entity.service.var}: dummyWsTipoCambioService
+    ${entity.service.getter}: getDummyWsTipoCambioService
+
+    ${entity.model.type}: GeneracionPlan
+    ${entity.model.var}: generacionPlan
+    ${entity.model.getter}: getGeneracionPlan
+    ${entity.service.type}: GeneracionPlanService
+    ${entity.service.var}: generacionPlanService
+    ${entity.service.getter}: getGeneracionPlanService
+
+    ${entity.model.type}: LeadTime
+    ${entity.model.var}: leadTime
+    ${entity.model.getter}: getLeadTime
+    ${entity.service.type}: LeadTimeService
+    ${entity.service.var}: leadTimeService
+    ${entity.service.getter}: getLeadTimeService
+
+    ${entity.model.type}: MapaAbastecimiento
+    ${entity.model.var}: mapaAbastecimiento
+    ${entity.model.getter}: getMapaAbastecimiento
+    ${entity.service.type}: MapaAbastecimientoService
+    ${entity.service.var}: mapaAbastecimientoService
+    ${entity.service.getter}: getMapaAbastecimientoService
+
+    ${entity.model.type}: ParametroAjusteRealProfit
+    ${entity.model.var}: parametroAjusteRealProfit
+    ${entity.model.getter}: getParametroAjusteRealProfit
+    ${entity.service.type}: ParametroAjusteRealProfitService
+    ${entity.service.var}: parametroAjusteRealProfitService
+    ${entity.service.getter}: getParametroAjusteRealProfitService
+
+    ${entity.model.type}: TipoCambio
+    ${entity.model.var}: tipoCambio
+    ${entity.model.getter}: getTipoCambio
+    ${entity.service.type}: TipoCambioService
+    ${entity.service.var}: tipoCambioService
+    ${entity.service.getter}: getTipoCambioService
+
+    ${entity.model.type}: ValorReal
+    ${entity.model.var}: valorReal
+    ${entity.model.getter}: getValorReal
+    ${entity.service.type}: ValorRealService
+    ${entity.service.var}: valorRealService
+    ${entity.service.getter}: getValorRealService
+
