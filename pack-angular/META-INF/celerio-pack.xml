@@ -17,6 +17,8 @@
             <entityContextProperty property="models" subPackage="model"/>
             <entityContextProperty property="customRepository" subPackage="custom.repository" suffix="Repository"/>
             <entityContextProperty property="customService" subPackage="custom.service" suffix="Service"/>
+            <entityContextProperty property="customServiceImpl" subPackage="custom.service.impl" suffix="ServiceImpl"/>
+            <entityContextProperty property="customRest" subPackage="custom.rest" suffix="Rest"/>
             <entityContextProperty property="excel" subPackage="excel" suffix="Excel"/>
 
         </entityContextProperties>

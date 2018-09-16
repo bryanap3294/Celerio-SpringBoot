@@ -1,0 +1,16 @@
+$output.java($entity.customServiceImpl)## Se configura en el Celerio-pack.xml
+
+##import com.bryanaguilar.miaplicacion.custom.service.AppParametriaService;
+##import com.bryanaguilar.miaplicacion.model.AppParametria;
+##import com.bryanaguilar.miaplicacion.service.impl.CrudServiceImpl;
+import org.springframework.stereotype.Component;
+
+$output.require("${Root.packageName}.custom.service.${entity}Service")##
+$output.require("${Root.packageName}.service.CrudServiceImpl")##
+$output.require("${Root.packageName}.model.${entity}")##
+
+@Component
+public class ${entity}ServiceImpl extends CrudServiceImpl<${entity}, Integer> implements ${entity}Service{
+
+
+}

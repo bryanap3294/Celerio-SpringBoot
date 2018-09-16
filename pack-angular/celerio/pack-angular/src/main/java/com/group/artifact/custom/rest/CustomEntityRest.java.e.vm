@@ -1,0 +1,19 @@
+$output.java($entity.customRest)## Se configura en el Celerio-pack.xml
+
+##import com.bryanaguilar.miaplicacion.custom.repository.AppParametriaRepository;
+##import com.bryanaguilar.miaplicacion.model.AppParametria;
+##import com.bryanaguilar.miaplicacion.rest.CrudRest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+$output.require("${Root.packageName}.custom.repository.${entity}Repository")##
+$output.require("${Root.packageName}.model.${entity}")##
+$output.require("${Root.packageName}.rest.CrudRest")##
+
+@RestController
+public class ${entity}Rest extends CrudRest<${entity}> {
+
+    @Autowired
+    protected ${entity}Repository ${entity.model.var}Repository;
+
+}
