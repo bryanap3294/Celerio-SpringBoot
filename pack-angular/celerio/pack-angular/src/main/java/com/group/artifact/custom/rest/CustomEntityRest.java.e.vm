@@ -11,6 +11,7 @@ $output.require("${Root.packageName}.model.${entity}")##
 $output.require("${Root.packageName}.rest.CrudRest")##
 
 @RestController
+@RequestMapping("/api/${entity}")
 public class ${entity}Rest extends CrudRest<${entity}> {
 
     @Autowired

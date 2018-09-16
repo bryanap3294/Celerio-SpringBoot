@@ -6,7 +6,7 @@ $output.java($entity.customServiceImpl)## Se configura en el Celerio-pack.xml
 import org.springframework.stereotype.Component;
 
 $output.require("${Root.packageName}.custom.service.${entity}Service")##
-$output.require("${Root.packageName}.service.CrudServiceImpl")##
+$output.require("${Root.packageName}.service.impl.CrudServiceImpl")##
 $output.require("${Root.packageName}.model.${entity}")##
 
 @Component

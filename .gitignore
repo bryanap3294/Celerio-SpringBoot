@@ -27,3 +27,5 @@ quickstart/src/main/config
 quickstart/web
 quickstart/src/main
 quickstart/NombreAplicacion
+.DS_Store
+quickstart/.DS_Store
