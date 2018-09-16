@@ -1,4 +1,4 @@
-$output.java($entity.repository)## Se configura en el Celerio-pack.xml
+$output.java("${Root.packageName}.repository","EntityRepository")## ${Root.packageName} es la ruta general
 
 ##import com.bryanaguilar.miaplicacion.model.BaseEntity;
 $output.require("${Root.packageName}.model.BaseEntity")##

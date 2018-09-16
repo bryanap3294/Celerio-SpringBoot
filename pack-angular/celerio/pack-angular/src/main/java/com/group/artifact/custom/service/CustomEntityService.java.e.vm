@@ -1,0 +1,10 @@
+$output.java($entity.customService)## Se configura en el Celerio-pack.xml
+
+##import com.bryanaguilar.miaplicacion.model.AppParametria;
+##import com.bryanaguilar.miaplicacion.service.CrudService;
+$output.require("${Root.packageName}.model.${entity}")##
+$output.require("${Root.packageName}.service.CrudService")##
+
+public interface ${entity}Service extends CrudService<${entity}>{
+
+}

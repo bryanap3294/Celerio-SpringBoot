@@ -1,9 +1,9 @@
-$output.java("${Root.packageName}.service.impl","CrudServiceImpl")## ${Root.packageName} es la ruta general
+$output.java($entity.customRepository)## Se configura en el Celerio-pack.xml
 
 ##import com.bryanaguilar.miaplicacion.model.AppParametria;
 ##import com.bryanaguilar.miaplicacion.repository.EntityRepository;
 $output.require("${Root.packageName}.model.${entity}")##
-$output.require("${Root.packageName}.repository.${entity}")##
+$output.require("${Root.packageName}.repository.EntityRepository")##
 import org.springframework.stereotype.Repository;
 
 @Repository
