@@ -1,10 +1,5 @@
 $output.java("${Root.packageName}.service.impl","CrudServiceImpl")## ${Root.packageName} es la ruta general
 
-##import com.bryanaguilar.miaplicacion.dto.PageRequestDTO;
-##import com.bryanaguilar.miaplicacion.dto.PageResponseDTO;
-##import com.bryanaguilar.miaplicacion.model.BaseEntity;
-##import com.bryanaguilar.miaplicacion.repository.EntityRepository;
-##import com.bryanaguilar.miaplicacion.service.CrudService;
 $output.require("${Root.packageName}.dto.PageRequestDTO")##
 $output.require("${Root.packageName}.dto.PageResponseDTO")##
 $output.require("${Root.packageName}.model.BaseEntity")##

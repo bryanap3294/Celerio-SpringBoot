@@ -1,7 +1,5 @@
 $output.java("${Root.packageName}.service","CrudService")## ${Root.packageName} es la ruta general
 
-##import com.bryanaguilar.miaplicacion.dto.PageRequestDTO;
-##import com.bryanaguilar.miaplicacion.dto.PageResponseDTO;
 $output.require("${Root.packageName}.dto.PageRequestDTO")##
 $output.require("${Root.packageName}.dto.PageResponseDTO")##
 import java.util.List;
